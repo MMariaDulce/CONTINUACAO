@@ -1,99 +1,105 @@
-import styled from "styled-components";
 
+import styled from 'styled-components';
 export const Container = styled.div`
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-`;
-
-export const Header = styled.header`
-  background-color: #003366;
-  padding: 20px;
-`;
-
-export const HeaderLinks = styled.nav`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-`;
-
-export const HeaderLink = styled.a`
+  height: 100vh;
+  padding: 0 50px;
   color: white;
-  text-decoration: none;
-  font-size: 16px;
+  font-family: sans-serif;
 `;
 
-export const Form = styled.form`
+export const LeftSection = styled.div`
+  color: white;
+`;
+
+export const Logo = styled.div`
   display: flex;
-  flex-direction: column;
-  gap: 15px;
-  margin-top: 20px;
+  align-items: center;
+  margin-bottom: 50px;
+`;
+
+export const LogoImage = styled.img`
+  width: 300px;
+  height: 300px;
+  margin-right: 10px;
+  top: 0;
+  position: absolute;
+  left: 10px;
+`;
+
+export const LoginBox = styled.div`
+  background-color: #f0f0f5;
+  padding: 100px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-right: 100px;
+`;
+
+export const Title = styled.h2`
+  margin: 0 0 20px;
+  padding-bottom: 30px;
+  font-size: 24px;
+  color: #4a4aff;
+  font-family:  sans-serif;
+  font-size: 30px;
+  text-align: center;
+`;
+
+export const InputGroup = styled.div`
+  margin-bottom: 20px;
+  width: 280px;
+`;
+
+export const Label = styled.label`
+  display: block;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #333;
+  font-family: sans-serif;
 `;
 
 export const Input = styled.input`
+  width: 100%;
   padding: 10px;
-  font-size: 14px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  font-size: 14px;
 `;
 
 export const Button = styled.button`
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-
-  &:hover {
-    background-color: #0056b3;
-  }
-`;
-
-export const Footer = styled.footer`
-  text-align: center;
+  width: 50%;
   padding: 10px;
-  background-color: #003366;
-  color: white;
-  margin-top: 20px;
-`;
-
-export const SimNaoButton = styled.button`
-  padding: 5px 10px;
-  font-size: 14px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin: 5px;
-  background-color: ${({ active }) => (active ? "#28a745" : "#f8f9fa")};
-  color: ${({ active }) => (active ? "white" : "#007bff")};
-  cursor: pointer;
-
-  &:hover {
-    background-color: ${({ active }) => (active ? "#218838" : "#e2e6ea")};
-  }
-`;
-export const ConcluirButton = styled.button`
-  padding: 10px 20px;
-  background-color: #4caf50;
-  color: white;
+  background-color: #4a4aff;
   border: none;
   border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  margin-left: 77px;
   cursor: pointer;
-  font-size: 16px;
-  
+
   &:hover {
-    background-color: #45a049;
+    background-color: #3333ff;
   }
 `;
 
-export const HeaderTitle = styled.h1`
-  color: white;
-  text-align: center;
+export const ErrorMessage = styled.div`
+  color: red;
+  margin-bottom: 20px;
+  font-family: 'Poppins' sans-serif;
 `;
 
+export const Text = styled.h1`
+  margin-bottom: 20px;
+  font-family:  sans-serif;
+  font-size: 60px;
+`;
 
-
-
-
+export const Subtitulo = styled.p`
+font-size: 30px;
+font-family:  sans-serif;
+font-weight: bold;
+line-height: 0;
+padding-top: 4px;
+`;
